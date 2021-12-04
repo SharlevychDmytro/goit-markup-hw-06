@@ -454,13 +454,107 @@
               </li>
             </ul>
           </div>
+          <div class="footer-form-wrap">
+            <p class="footer-form-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+            <form action="#" class="footer-form">
+              <input
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+                class="footer-form-input"
+              />
+              <button type="submit" class="footer-form-btn">
+                Подписаться
+                <svg class="footer-form-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-btn" data-modal-close>
-          <svg class="modal-icon" width="18" height="18">
+        <div class="modal-form-wrap">
+          <p class="modal-form-title">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
+          <form action="#" class="modal-form">
+            <div class="modal-form-field">
+              <label for="user-name" class="modal-form-label">Имя</label>
+              <div class="modal-input-wrap">
+                <input
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  class="modal-input"
+                />
+                <svg class="modal-input-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-form-field">
+              <label for="user-tel" class="modal-form-label">Телефон</label>
+              <div class="modal-input-wrap">
+                <input
+                  type="tel"
+                  name="user-tel"
+                  id="user-tel"
+                  class="modal-input"
+                />
+                <svg class="modal-input-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-modal-phone"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-form-field">
+              <label for="user-mail" class="modal-form-label">Почта</label>
+              <div class="modal-input-wrap">
+                <input
+                  type="email"
+                  name="user-mail"
+                  id="user-mail"
+                  class="modal-input"
+                />
+                <svg class="modal-input-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-modal-email"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-form-field">
+              <label for="user-text" class="modal-form-label"
+                >Комментарий</label
+              >
+              <textarea
+                name="user-text"
+                id="user-text"
+                placeholder="Введите текст"
+                class="user-text"
+              ></textarea>
+            </div>
+            <div class="modal-form-checkbox">
+              <input
+                type="checkbox"
+                name="policy"
+                id="modal-check"
+                class="modal-check visually-hidden"
+              />
+              <label for="modal-check" class="modal-check-text">
+                <span
+                  ><svg class="icon-check" width="16" height="15">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
+                </span>
+                Соглашаюсь с рассылкой и принимаю</label
+              ><a class="modal-chek-link" href="#">Условия договора </a>
+            </div>
+            <button type="submit" class="modal-btn">Отправить</button>
+          </form>
+        </div>
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon" width="18" height="18">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
